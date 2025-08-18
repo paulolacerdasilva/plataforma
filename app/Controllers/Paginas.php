@@ -7,7 +7,10 @@ class Paginas extends Controller{
         $this->view('paginas/home', $dados);
     }//fim da funcao index
 
-    public function sobre($id){
-        echo $id. '<hr>';
+    public function sobre(){
+       $dados = ['titulo'=>'Página Sobre nós', 'descricao'=>'Somos os maiores da américa latina.'
+        ];
+
+        $this->view('paginas/sobre', $dados);
     }//fim do método sobre
 }//fim da classe Paginas
