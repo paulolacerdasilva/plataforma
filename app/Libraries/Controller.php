@@ -1,7 +1,7 @@
 <?php
 class Controller{
     public function model($model){
-        require_once '../app/Model/'.$model.'.php';
+        require_once '../app/Models/'.$model.'.php';
         return new $model;
     }//fim da função model
     public function view($view, $dados = []){
